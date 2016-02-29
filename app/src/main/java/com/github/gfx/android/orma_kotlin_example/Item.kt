@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.github.gfx.android.orma.example_kotlin
+package com.github.gfx.android.orma_kotlin_example
 
 import com.github.gfx.android.orma.annotation.Column
 import com.github.gfx.android.orma.annotation.PrimaryKey
