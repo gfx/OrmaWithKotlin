@@ -16,6 +16,7 @@
 
 package com.github.gfx.android.orma_kotlin_example
 
+import android.support.annotation.Nullable
 import com.github.gfx.android.orma.annotation.Column
 import com.github.gfx.android.orma.annotation.PrimaryKey
 import com.github.gfx.android.orma.annotation.Setter
@@ -29,17 +30,26 @@ class Item {
 
     @Column val content: String
 
+    @Nullable
+    @Column val user: User?
+
     @Column val createdTime: Timestamp
 
-    constructor(@Setter("id") id: Long, @Setter("content") content: String, @Setter("createdTime") createdTime: Timestamp) {
+    constructor(
+            @Setter("id") id: Long,
+            @Setter("content") content: String,
+            @Setter("user") user: User?,
+            @Setter("createdTime") createdTime: Timestamp) {
         this.id = id
         this.content = content
+        this.user = user
         this.createdTime = createdTime
     }
 
     constructor(id: Long, content: String) {
         this.id = id
         this.content = content
+        this.user = null
         this.createdTime = Timestamp(System.currentTimeMillis())
     }
 }

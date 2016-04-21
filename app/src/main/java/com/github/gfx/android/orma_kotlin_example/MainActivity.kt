@@ -9,7 +9,6 @@ import android.view.ViewGroup
 import android.widget.Toast
 import com.cookpad.android.rxt4a.schedulers.AndroidSchedulers
 import com.github.gfx.android.orma.Relation
-import com.github.gfx.android.orma.example_kotlin.OrmaDatabase
 import com.github.gfx.android.orma.widget.OrmaListAdapter
 import com.github.gfx.android.orma_kotlin_example.databinding.ActivityMainBinding
 import com.github.gfx.android.orma_kotlin_example.databinding.ItemBinding
