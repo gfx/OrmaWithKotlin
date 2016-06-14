@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-        orma = OrmaDatabase.builder(this).build()
+        orma = OrmaHolder.ORMA;
         adapter = Adapter(this, orma.relationOfItem().orderByIdAsc())
         binding.list.adapter = adapter
 
