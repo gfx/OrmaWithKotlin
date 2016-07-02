@@ -12,6 +12,7 @@ import com.github.gfx.android.orma.Relation
 import com.github.gfx.android.orma.widget.OrmaListAdapter
 import com.github.gfx.android.orma_kotlin_example.databinding.ActivityMainBinding
 import com.github.gfx.android.orma_kotlin_example.databinding.ItemBinding
+import rx.schedulers.Schedulers
 
 class MainActivity : AppCompatActivity() {
 
@@ -33,6 +34,7 @@ class MainActivity : AppCompatActivity() {
             adapter.addItemAsObservable({
                 Item(0, "content #" + orma.selectFromItem().count())
             })
+                    .subscribeOn(Schedulers.io())
                     .observeOn(AndroidSchedulers.mainThread())
                     .subscribe({
                         Toast.makeText(this, "item created!", Toast.LENGTH_SHORT).show()
@@ -42,7 +44,7 @@ class MainActivity : AppCompatActivity() {
 
     class Adapter(context: Context, relation: Relation<Item, *>) : OrmaListAdapter<Item>(context, relation) {
         override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View? {
-            var binding: ItemBinding
+            val binding: ItemBinding
             if (convertView == null) {
                 binding = DataBindingUtil.inflate(layoutInflater, R.layout.item, parent, false)
             } else {

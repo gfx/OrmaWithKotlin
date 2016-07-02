@@ -8,5 +8,5 @@ import com.github.gfx.android.orma.annotation.Table
 class User {
     @PrimaryKey(autoincrement = true) var id: Long = 0
 
-    @Column var name: String = ""
+    @Column var name: String? = null
 }
