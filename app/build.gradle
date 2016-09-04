@@ -16,7 +16,7 @@ apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 24
-    buildToolsVersion '24.0.0'
+    buildToolsVersion '24.0.1'
     dataBinding.enabled = true
     defaultConfig {
         applicationId "com.github.gfx.android.orma_example_kotlin"
@@ -49,12 +49,12 @@ kapt {
 }
 
 dependencies {
-    kapt 'com.github.gfx.android.orma:orma-processor:2.5.2'
-    compile 'com.github.gfx.android.orma:orma:2.5.2'
-    kapt 'com.android.databinding:compiler:2.1.2'
-    compile 'com.android.support:appcompat-v7:24.0.0'
-    compile 'com.android.support:cardview-v7:24.0.0'
-    compile 'com.android.support:design:24.0.0'
+    kapt 'com.github.gfx.android.orma:orma-processor:2.6.0'
+    compile 'com.github.gfx.android.orma:orma:2.6.0'
+    kapt 'com.android.databinding:compiler:2.1.3'
+    compile 'com.android.support:appcompat-v7:24.2.0'
+    compile 'com.android.support:cardview-v7:24.2.0'
+    compile 'com.android.support:design:24.2.0'
     compile 'com.jakewharton.threetenabp:threetenabp:1.0.3'
     compile 'com.cookpad.android.rxt4a:rxt4a:1.0.0'
     compile 'com.facebook.stetho:stetho:1.3.1'
