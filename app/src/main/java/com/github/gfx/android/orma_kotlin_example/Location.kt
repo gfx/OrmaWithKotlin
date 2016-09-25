@@ -8,4 +8,5 @@ import com.github.gfx.android.orma.annotation.Table
 data class Location(
         @Setter("latitude") @Column val latitude: Double,
         @Setter("longitude") @Column val longitude: Double) {
+    
 }

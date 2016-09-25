@@ -7,11 +7,11 @@ import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import com.cookpad.android.rxt4a.schedulers.AndroidSchedulers
 import com.github.gfx.android.orma.Relation
 import com.github.gfx.android.orma.widget.OrmaListAdapter
 import com.github.gfx.android.orma_kotlin_example.databinding.ActivityMainBinding
 import com.github.gfx.android.orma_kotlin_example.databinding.ItemBinding
+import rx.android.schedulers.AndroidSchedulers
 import rx.schedulers.Schedulers
 
 class MainActivity : AppCompatActivity() {
@@ -55,7 +55,9 @@ class MainActivity : AppCompatActivity() {
             binding.text.text = item.content;
 
             binding.root.setOnClickListener {
-                removeItemAsObservable(item).subscribe()
+                removeItemAsObservable(item)
+                        .subscribeOn(Schedulers.io())
+                        .subscribe()
             }
 
             return binding.root;
