@@ -45,8 +45,8 @@ android {
 }
 
 dependencies {
-    kapt 'com.github.gfx.android.orma:orma-processor:3.0.0'
-    compile 'com.github.gfx.android.orma:orma:3.0.0'
+    kapt 'com.github.gfx.android.orma:orma-processor:3.1.1'
+    compile 'com.github.gfx.android.orma:orma:3.1.1'
     kapt 'com.android.databinding:compiler:2.2.1'
     compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.android.support:cardview-v7:24.2.1'
