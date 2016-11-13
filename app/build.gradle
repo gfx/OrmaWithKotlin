@@ -34,8 +34,10 @@ android {
         }
     }
     lintOptions {
-        abortOnError true
+        abortOnError false
         disable 'SetTextI18n'
+        textReport true
+        textOutput 'stdout'
     }
     packagingOptions {
         exclude 'META-INF/LICENSE.txt'
