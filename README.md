@@ -1,4 +1,4 @@
-# Orma-Kotlin-Example [![CircleCI](https://circleci.com/gh/gfx/Orma-Kotlin-Example.svg?style=svg)](https://circleci.com/gh/gfx/Orma-Kotlin-Example)
+# Orma-Kotlin-Example [![CircleCI](https://circleci.com/gh/gfx/OrmaWithKotlin.svg?style=svg)](https://circleci.com/gh/gfx/OrmaWithKotlin)
 
 Example Kotlin app for [Android Orma](https://github.com/gfx/Android-Orma/issues).
 
