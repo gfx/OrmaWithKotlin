@@ -1,5 +1,5 @@
 buildscript {
-    ext.kotlin_version = '1.0.5-3'
+    ext.kotlin_version = '1.0.6'
     repositories {
         jcenter()
     }
@@ -51,9 +51,9 @@ dependencies {
     kapt 'com.github.gfx.android.orma:orma-processor:4.1.1'
     compile 'com.github.gfx.android.orma:orma:4.1.1'
     kapt 'com.android.databinding:compiler:2.2.3'
-    compile 'com.android.support:appcompat-v7:25.1.0'
-    compile 'com.android.support:cardview-v7:25.1.0'
-    compile 'com.android.support:design:25.1.0'
+    compile 'com.android.support:appcompat-v7:25.1.1'
+    compile 'com.android.support:cardview-v7:25.1.1'
+    compile 'com.android.support:design:25.1.1'
     compile 'io.reactivex.rxjava2:rxjava:2.0.2'
     compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
     compile 'com.jakewharton.threetenabp:threetenabp:1.0.4'
